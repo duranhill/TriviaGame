@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron" style="background: orange;">
+
+     <h1>TOTALLY TRIVIAL TRIVIA</h1>
+     <form id="quiz" name = 'quiz'>
+     </div>
+
+
+    <p class="question">1. Which Professional Sport was Muhammad Ali in ?</p>
+    <img src="https://media3.s-nbcnews.com/j/newscms/2016_22/1562581/160602-muhammad-ali-portrait-yh-0326p_d9233f379ca957fee223c6bb4d5b390d.nbcnews-fp-360-360.jpg">
+<ul class="answers">
+<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Boxing </label><br/>
+
+<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Hockey </label><br/>
+
+<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Soccer </label><br/>
+
+<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Track and Field </label><br/>
+</ul>
+<br><br><br>
+<input type="button" value="Im finished" onclick="check();">
+</form>
+<div id="after submit">
+	<p id="numbers_correct"></p></div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="game.js"></script>
+</body>
+
+</html>
